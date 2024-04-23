@@ -94,6 +94,9 @@
 		DB71A4872BD84BBD00AFCF9B /* WordMorphMadness */ = {
 			isa = PBXGroup;
 			children = (
+				DB71A4B22BD84C8000AFCF9B /* View */,
+				DB71A4B32BD84C8400AFCF9B /* Model */,
+				DB71A4B42BD84C9800AFCF9B /* View Model */,
 				DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */,
 				DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */,
 				DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */,
@@ -125,6 +128,27 @@
 				DB71A4A52BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift */,
 			);
 			path = WordMorphMadnessUITests;
+			sourceTree = "<group>";
+		};
+		DB71A4B22BD84C8000AFCF9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB71A4B32BD84C8400AFCF9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB71A4B42BD84C9800AFCF9B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
