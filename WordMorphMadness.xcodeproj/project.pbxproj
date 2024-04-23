@@ -14,6 +14,36 @@
 		DB71A49A2BD84BBF00AFCF9B /* WordMorphMadnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4992BD84BBF00AFCF9B /* WordMorphMadnessTests.swift */; };
 		DB71A4A42BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4A32BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift */; };
 		DB71A4A62BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4A52BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift */; };
+		DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B52BD84CE600AFCF9B /* SplashView.swift */; };
+		DB71A4C02BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B72BD84EFD00AFCF9B /* MultiplayerView.swift */; };
+		DB71A4C12BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B72BD84EFD00AFCF9B /* MultiplayerView.swift */; };
+		DB71A4C22BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B72BD84EFD00AFCF9B /* MultiplayerView.swift */; };
+		DB71A4C32BD84EFD00AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B82BD84EFD00AFCF9B /* ChallengeView.swift */; };
+		DB71A4C42BD84EFD00AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B82BD84EFD00AFCF9B /* ChallengeView.swift */; };
+		DB71A4C52BD84EFD00AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B82BD84EFD00AFCF9B /* ChallengeView.swift */; };
+		DB71A4C62BD84EFD00AFCF9B /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B92BD84EFD00AFCF9B /* GamePlayView.swift */; };
+		DB71A4C72BD84EFD00AFCF9B /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B92BD84EFD00AFCF9B /* GamePlayView.swift */; };
+		DB71A4C82BD84EFD00AFCF9B /* GamePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4B92BD84EFD00AFCF9B /* GamePlayView.swift */; };
+		DB71A4C92BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BA2BD84EFD00AFCF9B /* TimeAttackView.swift */; };
+		DB71A4CA2BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BA2BD84EFD00AFCF9B /* TimeAttackView.swift */; };
+		DB71A4CB2BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BA2BD84EFD00AFCF9B /* TimeAttackView.swift */; };
+		DB71A4CC2BD84EFD00AFCF9B /* EndlessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BB2BD84EFD00AFCF9B /* EndlessView.swift */; };
+		DB71A4CD2BD84EFD00AFCF9B /* EndlessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BB2BD84EFD00AFCF9B /* EndlessView.swift */; };
+		DB71A4CE2BD84EFD00AFCF9B /* EndlessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BB2BD84EFD00AFCF9B /* EndlessView.swift */; };
+		DB71A4CF2BD84EFD00AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BC2BD84EFD00AFCF9B /* ClassicView.swift */; };
+		DB71A4D02BD84EFD00AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BC2BD84EFD00AFCF9B /* ClassicView.swift */; };
+		DB71A4D12BD84EFD00AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BC2BD84EFD00AFCF9B /* ClassicView.swift */; };
+		DB71A4D22BD84EFD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BD2BD84EFD00AFCF9B /* ResultsView.swift */; };
+		DB71A4D32BD84EFD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BD2BD84EFD00AFCF9B /* ResultsView.swift */; };
+		DB71A4D42BD84EFD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BD2BD84EFD00AFCF9B /* ResultsView.swift */; };
+		DB71A4D52BD84EFD00AFCF9B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BE2BD84EFD00AFCF9B /* StoreView.swift */; };
+		DB71A4D62BD84EFD00AFCF9B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BE2BD84EFD00AFCF9B /* StoreView.swift */; };
+		DB71A4D72BD84EFD00AFCF9B /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BE2BD84EFD00AFCF9B /* StoreView.swift */; };
+		DB71A4D82BD84EFD00AFCF9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BF2BD84EFD00AFCF9B /* MainView.swift */; };
+		DB71A4D92BD84EFD00AFCF9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BF2BD84EFD00AFCF9B /* MainView.swift */; };
+		DB71A4DA2BD84EFD00AFCF9B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4BF2BD84EFD00AFCF9B /* MainView.swift */; };
+		DB71A4DB2BD84F2700AFCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */; };
+		DB71A4DC2BD84F2800AFCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +74,16 @@
 		DB71A49F2BD84BBF00AFCF9B /* WordMorphMadnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordMorphMadnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB71A4A32BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessUITests.swift; sourceTree = "<group>"; };
 		DB71A4A52BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB71A4B52BD84CE600AFCF9B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		DB71A4B72BD84EFD00AFCF9B /* MultiplayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MultiplayerView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/MultiplayerView.swift"; sourceTree = "<group>"; };
+		DB71A4B82BD84EFD00AFCF9B /* ChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/ChallengeView.swift"; sourceTree = "<group>"; };
+		DB71A4B92BD84EFD00AFCF9B /* GamePlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamePlayView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/GamePlayView.swift"; sourceTree = "<group>"; };
+		DB71A4BA2BD84EFD00AFCF9B /* TimeAttackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeAttackView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/TimeAttackView.swift"; sourceTree = "<group>"; };
+		DB71A4BB2BD84EFD00AFCF9B /* EndlessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndlessView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/EndlessView.swift"; sourceTree = "<group>"; };
+		DB71A4BC2BD84EFD00AFCF9B /* ClassicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClassicView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/ClassicView.swift"; sourceTree = "<group>"; };
+		DB71A4BD2BD84EFD00AFCF9B /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/ResultsView.swift"; sourceTree = "<group>"; };
+		DB71A4BE2BD84EFD00AFCF9B /* StoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/StoreView.swift"; sourceTree = "<group>"; };
+		DB71A4BF2BD84EFD00AFCF9B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "../../../../../Documents/Word-Morph-Madness/Word Morph Madness/View/MainView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +173,16 @@
 		DB71A4B22BD84C8000AFCF9B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DB71A4B82BD84EFD00AFCF9B /* ChallengeView.swift */,
+				DB71A4BC2BD84EFD00AFCF9B /* ClassicView.swift */,
+				DB71A4BB2BD84EFD00AFCF9B /* EndlessView.swift */,
+				DB71A4B92BD84EFD00AFCF9B /* GamePlayView.swift */,
+				DB71A4BF2BD84EFD00AFCF9B /* MainView.swift */,
+				DB71A4B72BD84EFD00AFCF9B /* MultiplayerView.swift */,
+				DB71A4BD2BD84EFD00AFCF9B /* ResultsView.swift */,
+				DB71A4BE2BD84EFD00AFCF9B /* StoreView.swift */,
+				DB71A4BA2BD84EFD00AFCF9B /* TimeAttackView.swift */,
+				DB71A4B52BD84CE600AFCF9B /* SplashView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB71A4DB2BD84F2700AFCF9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB71A4DC2BD84F2800AFCF9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +334,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */,
+				DB71A4D82BD84EFD00AFCF9B /* MainView.swift in Sources */,
 				DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */,
+				DB71A4D52BD84EFD00AFCF9B /* StoreView.swift in Sources */,
+				DB71A4C92BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */,
+				DB71A4D22BD84EFD00AFCF9B /* ResultsView.swift in Sources */,
+				DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */,
+				DB71A4C32BD84EFD00AFCF9B /* ChallengeView.swift in Sources */,
+				DB71A4CF2BD84EFD00AFCF9B /* ClassicView.swift in Sources */,
+				DB71A4CC2BD84EFD00AFCF9B /* EndlessView.swift in Sources */,
+				DB71A4C62BD84EFD00AFCF9B /* GamePlayView.swift in Sources */,
+				DB71A4C02BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +352,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB71A4C72BD84EFD00AFCF9B /* GamePlayView.swift in Sources */,
+				DB71A4D32BD84EFD00AFCF9B /* ResultsView.swift in Sources */,
+				DB71A4D02BD84EFD00AFCF9B /* ClassicView.swift in Sources */,
+				DB71A4D92BD84EFD00AFCF9B /* MainView.swift in Sources */,
+				DB71A4CD2BD84EFD00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A49A2BD84BBF00AFCF9B /* WordMorphMadnessTests.swift in Sources */,
+				DB71A4C12BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */,
+				DB71A4C42BD84EFD00AFCF9B /* ChallengeView.swift in Sources */,
+				DB71A4D62BD84EFD00AFCF9B /* StoreView.swift in Sources */,
+				DB71A4CA2BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +369,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB71A4CE2BD84EFD00AFCF9B /* EndlessView.swift in Sources */,
+				DB71A4D42BD84EFD00AFCF9B /* ResultsView.swift in Sources */,
+				DB71A4D12BD84EFD00AFCF9B /* ClassicView.swift in Sources */,
+				DB71A4C52BD84EFD00AFCF9B /* ChallengeView.swift in Sources */,
+				DB71A4CB2BD84EFD00AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A4A42BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift in Sources */,
+				DB71A4C22BD84EFD00AFCF9B /* MultiplayerView.swift in Sources */,
+				DB71A4DA2BD84EFD00AFCF9B /* MainView.swift in Sources */,
+				DB71A4C82BD84EFD00AFCF9B /* GamePlayView.swift in Sources */,
+				DB71A4D72BD84EFD00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4A62BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
