@@ -26,6 +26,10 @@ struct GamePlayView: View {
             ZStack {
                 Color.platinum.ignoresSafeArea()
                 VStack {
+                    Image("Word Morph Madness")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 250, height: 250)
                     NavigationLink("Classic Mode") {
                         ClassicView()
                             .navigationBarBackButtonHidden(true)
