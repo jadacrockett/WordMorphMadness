@@ -52,9 +52,12 @@
 		DB71A5192BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */; };
 		DB71A51A2BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */; };
 		DB71A51B2BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */; };
-		DB71A51D2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRow.swift */; };
-		DB71A51E2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRow.swift */; };
-		DB71A51F2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRow.swift */; };
+		DB71A51D2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */; };
+		DB71A51E2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */; };
+		DB71A51F2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */; };
+		DB71A5252BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
+		DB71A5262BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
+		DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +101,8 @@
 		DB71A5122BD85A8000AFCF9B /* LetterBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBox.swift; sourceTree = "<group>"; };
 		DB71A5162BD85C8200AFCF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lovely Madness.otf"; path = "../../../../../Downloads/Lovely Madness.otf"; sourceTree = "<group>"; };
-		DB71A51C2BD85DEF00AFCF9B /* LetterBoxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRow.swift; sourceTree = "<group>"; };
+		DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRowFunctional.swift; sourceTree = "<group>"; };
+		DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				DB71A5122BD85A8000AFCF9B /* LetterBox.swift */,
-				DB71A51C2BD85DEF00AFCF9B /* LetterBoxRow.swift */,
+				DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */,
+				DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -386,8 +391,9 @@
 				DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */,
 				DB71A4F62BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50B2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
+				DB71A5252BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB71A4FE2BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
-				DB71A51D2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */,
+				DB71A51D2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
 				DB71A4FA2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */,
 				DB71A5072BD853BF00AFCF9B /* StoreView.swift in Sources */,
@@ -400,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB71A51E2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */,
+				DB71A51E2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
@@ -408,6 +414,7 @@
 				DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 				DB71A5032BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A4FF2BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
+				DB71A5262BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB71A4F72BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A49A2BD84BBF00AFCF9B /* WordMorphMadnessTests.swift in Sources */,
 				DB71A5082BD853BF00AFCF9B /* StoreView.swift in Sources */,
@@ -427,8 +434,9 @@
 				DB71A4DE2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4F82BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50D2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
+				DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB71A5002BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
-				DB71A51F2BD85DEF00AFCF9B /* LetterBoxRow.swift in Sources */,
+				DB71A51F2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
 				DB71A4FC2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4A42BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift in Sources */,
 				DB71A5092BD853BF00AFCF9B /* StoreView.swift in Sources */,

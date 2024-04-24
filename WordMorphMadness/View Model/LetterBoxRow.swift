@@ -2,7 +2,7 @@
 //  LetterBoxRow.swift
 //  WordMorphMadness
 //
-//  Created by Jada Crockett on 4/23/24.
+//  Created by Jada Crockett on 4/24/24.
 //
 
 import SwiftUI
@@ -22,46 +22,48 @@ struct LetterBoxRow: View {
         }
     }
     @State var letterBoxArray: [LetterBox]
-    @State var selected: Int? = nil
     
     var body: some View {
         LazyHGrid(rows: row) {
             ForEach (0...word.count - 1, id: \.self) { num in
                 letterBoxArray[num]
                     .frame(width: boxSize, height: boxSize)
-                    .onTapGesture {
-                        changeStatusToChanging(index: num, len: word.count, array: &letterBoxArray)
-                        selected = num
-                        print(selected)
-                    }
+                    
             }
         }
         
     }
+    
+    init(word: String, wordStatusArray: [Int]) {
+        self.word = word
+        self.letterBoxArray = getLetterBoxArray(word: word, wordStatusArray: wordStatusArray)
+    }
 }
 
-func getLetterBoxArray(word: String) -> [LetterBox] {
+func getLetterBoxArray(word: String, wordStatusArray: [Int]) -> [LetterBox] {
     var arr: [LetterBox] = []
-    for char in word {
-        arr += [LetterBox(letter: char, status: .notChanging)]
+    let wordArray = Array(word)
+    for i in 0..<word.count {
+        switch wordStatusArray[i] {
+        case 1:
+            arr += [LetterBox(letter: wordArray[i] , status: .changing)]
+        case 3:
+            arr += [LetterBox(letter: wordArray[i] , status: .acceptable)]
+        case 4:
+            arr += [LetterBox(letter: wordArray[i] , status: .notAcceptable)]
+        default:
+            arr += [LetterBox(letter: wordArray[i] , status: .notChanging)]
+        }
     }
     return arr
 }
 
-func changeStatusToChanging(index: Int, len: Int, array: inout [LetterBox]) {
-    for idx in 0...len - 1 {
-        if idx == index {
-            array[idx].status = .changing
-        } else {
-            array[idx].status = .notChanging
-        }
-    }
-}
 
 struct LetterBoxRowPreview: PreviewProvider {
     static var previews: some View {
-        LetterBoxRow(word: "love", letterBoxArray: getLetterBoxArray(word: "love"))
+        LetterBoxRow(word: "love",  wordStatusArray: [1, 2, 3, 4])
     }
 }
+
 
 
