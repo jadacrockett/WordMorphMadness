@@ -29,7 +29,7 @@ struct GamePlayView: View {
                     Image("Word Morph Madness")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 250, height: 250)
+                        .frame(width: 300, height: 300)
                     NavigationLink("Classic Mode") {
                         ClassicView()
                             .navigationBarBackButtonHidden(true)
