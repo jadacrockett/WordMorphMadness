@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LetterBox: View {
-    var letter: Character
+    var letter: String
     var status: LetterStatus
     var boxColor: Color {
         switch status {
@@ -30,6 +30,7 @@ struct LetterBox: View {
                 .aspectRatio(1, contentMode: .fit)
             Text(String(letter))
                 .font(.custom("Lovely Madness", size: 55))
+                .multilineTextAlignment(.center)
         }
     }
     

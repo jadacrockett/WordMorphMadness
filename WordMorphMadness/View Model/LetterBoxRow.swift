@@ -46,13 +46,13 @@ func getLetterBoxArray(word: String, wordStatusArray: [Int]) -> [LetterBox] {
     for i in 0..<word.count {
         switch wordStatusArray[i] {
         case 1:
-            arr += [LetterBox(letter: wordArray[i] , status: .changing)]
+            arr += [LetterBox(letter: String(wordArray[i]) , status: .changing)]
         case 3:
-            arr += [LetterBox(letter: wordArray[i] , status: .acceptable)]
+            arr += [LetterBox(letter: String(wordArray[i]) , status: .acceptable)]
         case 4:
-            arr += [LetterBox(letter: wordArray[i] , status: .notAcceptable)]
+            arr += [LetterBox(letter: String(wordArray[i]) , status: .notAcceptable)]
         default:
-            arr += [LetterBox(letter: wordArray[i] , status: .notChanging)]
+            arr += [LetterBox(letter: String(wordArray[i]) , status: .notChanging)]
         }
     }
     return arr

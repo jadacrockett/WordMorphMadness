@@ -21,29 +21,58 @@ struct LetterBoxRowFunctional: View {
             return 75
         }
     }
+    private let staticletterBoxArray: [LetterBox]
+    var gamePlayArray: [LetterBox] = []
     @State var letterBoxArray: [LetterBox]
-    @State var selected: Int? = nil
+    @State var selected = -1;
+    @State private var userEntry: String = ""
+    @FocusState private var keyboardFocused: Bool
     
     var body: some View {
-        LazyHGrid(rows: row) {
-            ForEach (0...word.count - 1, id: \.self) { num in
-                letterBoxArray[num]
-                    .frame(width: boxSize, height: boxSize)
-                    .onTapGesture {
-                        changeStatusToChanging(index: num, len: word.count, array: &letterBoxArray)
-                        selected = num
-                        print(selected)
-                    }
+        VStack {
+            LazyHGrid(rows: row) {
+                ForEach (0...word.count - 1, id: \.self) { num in
+                    letterBoxArray[num]
+                        .frame(width: boxSize, height: boxSize)
+                        .onTapGesture {
+                            changeStatusToChanging(index: num, len: word.count, array: &letterBoxArray)
+                            selected = num
+                            //print(selected)
+                        }
+                }
             }
-        }
-        
+            TextField("", text: $userEntry)
+                .keyboardType(.alphabet)
+                .autocorrectionDisabled(true)
+                .tint(Color.clear)
+                .foregroundStyle(Color.clear)
+                .focused($keyboardFocused)
+                .onChange(of: selected) {
+                    resetArray(newArray: &letterBoxArray, oldArray: staticletterBoxArray)
+                }
+                .onChange(of: userEntry) {
+                    //print(userEntry)
+                    if (selected >= 0) && (!userEntry.isEmpty) {
+                        letterBoxArray[selected].letter = String(userEntry.last!)
+                    }
+                }
+
+            
+        }.onAppear(perform: {keyboardFocused = true})
     }
+    
+    init(word: String) {
+        self.word = word
+        staticletterBoxArray = getLetterBoxArray(word: word)
+        self.letterBoxArray = getLetterBoxArray(word: word)
+    }
+    
 }
 
 func getLetterBoxArray(word: String) -> [LetterBox] {
     var arr: [LetterBox] = []
     for char in word {
-        arr += [LetterBox(letter: char, status: .notChanging)]
+        arr += [LetterBox(letter: String(char), status: .notChanging)]
     }
     return arr
 }
@@ -58,9 +87,15 @@ func changeStatusToChanging(index: Int, len: Int, array: inout [LetterBox]) {
     }
 }
 
+func resetArray(newArray: inout [LetterBox], oldArray: [LetterBox]) {
+    for idx in 0..<newArray.count {
+        newArray[idx].letter = oldArray[idx].letter
+    }
+}
+
 struct LetterBoxRowFunctionalPreview: PreviewProvider {
     static var previews: some View {
-        LetterBoxRowFunctional(word: "love", letterBoxArray: getLetterBoxArray(word: "love"))
+        LetterBoxRowFunctional(word: "love")
     }
 }
 

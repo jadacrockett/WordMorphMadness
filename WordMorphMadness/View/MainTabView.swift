@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct MainTabView: View {
     
     @State private var selection = 2
     @State var coins = 0
@@ -46,5 +46,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    MainTabView()
 }

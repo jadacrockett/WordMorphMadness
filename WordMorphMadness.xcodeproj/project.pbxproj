@@ -58,6 +58,9 @@
 		DB71A5252BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
 		DB71A5262BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
 		DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */; };
+		DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
+		DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
+		DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,7 @@
 		DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lovely Madness.otf"; path = "../../../../../Downloads/Lovely Madness.otf"; sourceTree = "<group>"; };
 		DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRowFunctional.swift; sourceTree = "<group>"; };
 		DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRow.swift; sourceTree = "<group>"; };
+		DB71A5282BD97C2900AFCF9B /* getNewWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNewWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,7 @@
 		DB71A4B32BD84C8400AFCF9B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB71A5282BD97C2900AFCF9B /* getNewWord.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4EE2BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A4F22BD8529600AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A5022BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */,
@@ -410,6 +416,7 @@
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 				DB71A5032BD8538D00AFCF9B /* MainTabView.swift in Sources */,
@@ -428,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4F02BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A4F42BD8529600AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A5042BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */,
@@ -595,8 +603,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,8 +634,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
