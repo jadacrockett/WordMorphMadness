@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
 		DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */; };
 		DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */; };
 		DB71A48D2BD84BBF00AFCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */; };
@@ -22,9 +25,6 @@
 		DB71A4EE2BD8528800AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */; };
 		DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */; };
 		DB71A4F02BD8528800AFCF9B /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */; };
-		DB71A4F22BD8529600AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F12BD8529600AFCF9B /* TimeAttackView.swift */; };
-		DB71A4F32BD8529600AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F12BD8529600AFCF9B /* TimeAttackView.swift */; };
-		DB71A4F42BD8529600AFCF9B /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F12BD8529600AFCF9B /* TimeAttackView.swift */; };
 		DB71A4F62BD852A400AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */; };
 		DB71A4F72BD852A400AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */; };
 		DB71A4F82BD852A400AFCF9B /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */; };
@@ -81,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackView.swift; sourceTree = "<group>"; };
 		DB71A4852BD84BBD00AFCF9B /* WordMorphMadness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordMorphMadness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessApp.swift; sourceTree = "<group>"; };
 		DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		DB71A4A52BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DB71A4B52BD84CE600AFCF9B /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicView.swift; sourceTree = "<group>"; };
-		DB71A4F12BD8529600AFCF9B /* TimeAttackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackView.swift; sourceTree = "<group>"; };
 		DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		DB71A4F92BD852AE00AFCF9B /* EndlessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessView.swift; sourceTree = "<group>"; };
 		DB71A4FD2BD852BA00AFCF9B /* MultiplayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerView.swift; sourceTree = "<group>"; };
@@ -134,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB22EB0A2BDE8561004C5A37 /* Time Attack */ = {
+			isa = PBXGroup;
+			children = (
+				DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */,
+			);
+			path = "Time Attack";
+			sourceTree = "<group>";
+		};
 		DB71A47C2BD84BBD00AFCF9B = {
 			isa = PBXGroup;
 			children = (
@@ -227,8 +235,8 @@
 		DB71A4EC2BD8527900AFCF9B /* Game Play Views */ = {
 			isa = PBXGroup;
 			children = (
+				DB22EB0A2BDE8561004C5A37 /* Time Attack */,
 				DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */,
-				DB71A4F12BD8529600AFCF9B /* TimeAttackView.swift */,
 				DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */,
 				DB71A4F92BD852AE00AFCF9B /* EndlessView.swift */,
 				DB71A4FD2BD852BA00AFCF9B /* MultiplayerView.swift */,
@@ -390,8 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4EE2BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */,
-				DB71A4F22BD8529600AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A5022BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 				DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */,
@@ -416,6 +424,7 @@
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
@@ -425,7 +434,6 @@
 				DB71A4F72BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A49A2BD84BBF00AFCF9B /* WordMorphMadnessTests.swift in Sources */,
 				DB71A5082BD853BF00AFCF9B /* StoreView.swift in Sources */,
-				DB71A4F32BD8529600AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A5142BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +443,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4F02BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
-				DB71A4F42BD8529600AFCF9B /* TimeAttackView.swift in Sources */,
 				DB71A5042BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 				DB71A4DE2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
