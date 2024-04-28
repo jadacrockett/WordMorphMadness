@@ -36,7 +36,7 @@ struct GamePlayView: View {
                     }
                     .buttonStyle(MyButtonStyle())
                     NavigationLink("Time Attack Mode") {
-                        TimeAttackView(currWord: "Cake")
+                        TAOptionView()
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())

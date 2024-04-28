@@ -10,6 +10,29 @@
 		DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
 		DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
 		DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB102BDE8AEF004C5A37 /* getAPICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0F2BDE8AEF004C5A37 /* getAPICalls.swift */; };
+		DB22EB112BDE8AEF004C5A37 /* getAPICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0F2BDE8AEF004C5A37 /* getAPICalls.swift */; };
+		DB22EB122BDE8AEF004C5A37 /* getAPICalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0F2BDE8AEF004C5A37 /* getAPICalls.swift */; };
+		DB22EB152BDE8E31004C5A37 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = DB22EB142BDE8E31004C5A37 /* GoogleSignIn */; };
+		DB22EB172BDE8E31004C5A37 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22EB162BDE8E31004C5A37 /* GoogleSignInSwift */; };
+		DB22EB192BDE9997004C5A37 /* TAOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB182BDE9997004C5A37 /* TAOptionView.swift */; };
+		DB22EB1A2BDE9997004C5A37 /* TAOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB182BDE9997004C5A37 /* TAOptionView.swift */; };
+		DB22EB1B2BDE9997004C5A37 /* TAOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB182BDE9997004C5A37 /* TAOptionView.swift */; };
+		DB22EB432BDECB20004C5A37 /* 6LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */; };
+		DB22EB442BDECB20004C5A37 /* 6LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */; };
+		DB22EB452BDECB20004C5A37 /* 6LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */; };
+		DB22EB462BDECB20004C5A37 /* 5LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB402BDECB20004C5A37 /* 5LetterWords.csv */; };
+		DB22EB472BDECB20004C5A37 /* 5LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB402BDECB20004C5A37 /* 5LetterWords.csv */; };
+		DB22EB482BDECB20004C5A37 /* 5LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB402BDECB20004C5A37 /* 5LetterWords.csv */; };
+		DB22EB492BDECB20004C5A37 /* 3LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */; };
+		DB22EB4A2BDECB20004C5A37 /* 3LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */; };
+		DB22EB4B2BDECB20004C5A37 /* 3LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */; };
+		DB22EB502BDED3A0004C5A37 /* 4LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */; };
+		DB22EB512BDED3A0004C5A37 /* 4LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */; };
+		DB22EB522BDED3A0004C5A37 /* 4LetterWords.csv in Resources */ = {isa = PBXBuildFile; fileRef = DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */; };
+		DB22EB542BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
+		DB22EB552BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
+		DB22EB562BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
 		DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */; };
 		DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */; };
 		DB71A48D2BD84BBF00AFCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */; };
@@ -82,6 +105,13 @@
 
 /* Begin PBXFileReference section */
 		DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackView.swift; sourceTree = "<group>"; };
+		DB22EB0F2BDE8AEF004C5A37 /* getAPICalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getAPICalls.swift; sourceTree = "<group>"; };
+		DB22EB182BDE9997004C5A37 /* TAOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOptionView.swift; sourceTree = "<group>"; };
+		DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 6LetterWords.csv; sourceTree = "<group>"; };
+		DB22EB402BDECB20004C5A37 /* 5LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5LetterWords.csv; sourceTree = "<group>"; };
+		DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3LetterWords.csv; sourceTree = "<group>"; };
+		DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4LetterWords.csv; path = WordMorphMadness/MyPlayground.playground/Resources/4LetterWords.csv; sourceTree = SOURCE_ROOT; };
+		DB22EB532BDED43E004C5A37 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Words.swift; path = WordMorphMadness/MyPlayground.playground/Sources/Words.swift; sourceTree = SOURCE_ROOT; };
 		DB71A4852BD84BBD00AFCF9B /* WordMorphMadness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordMorphMadness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessApp.swift; sourceTree = "<group>"; };
 		DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22EB152BDE8E31004C5A37 /* GoogleSignIn in Frameworks */,
+				DB22EB172BDE8E31004C5A37 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +169,21 @@
 		DB22EB0A2BDE8561004C5A37 /* Time Attack */ = {
 			isa = PBXGroup;
 			children = (
+				DB22EB182BDE9997004C5A37 /* TAOptionView.swift */,
 				DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */,
 			);
 			path = "Time Attack";
+			sourceTree = "<group>";
+		};
+		DB22EB1E2BDEBB83004C5A37 /* Word Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */,
+				DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */,
+				DB22EB402BDECB20004C5A37 /* 5LetterWords.csv */,
+				DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */,
+			);
+			path = "Word Files";
 			sourceTree = "<group>";
 		};
 		DB71A47C2BD84BBD00AFCF9B = {
@@ -217,7 +261,10 @@
 		DB71A4B32BD84C8400AFCF9B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DB22EB532BDED43E004C5A37 /* Words.swift */,
+				DB22EB1E2BDEBB83004C5A37 /* Word Files */,
 				DB71A5282BD97C2900AFCF9B /* getNewWord.swift */,
+				DB22EB0F2BDE8AEF004C5A37 /* getAPICalls.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +325,10 @@
 			dependencies = (
 			);
 			name = WordMorphMadness;
+			packageProductDependencies = (
+				DB22EB142BDE8E31004C5A37 /* GoogleSignIn */,
+				DB22EB162BDE8E31004C5A37 /* GoogleSignInSwift */,
+			);
 			productName = WordMorphMadness;
 			productReference = DB71A4852BD84BBD00AFCF9B /* WordMorphMadness.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +401,9 @@
 				Base,
 			);
 			mainGroup = DB71A47C2BD84BBD00AFCF9B;
+			packageReferences = (
+				DB22EB132BDE8E31004C5A37 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = DB71A4862BD84BBD00AFCF9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,9 +420,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22EB492BDECB20004C5A37 /* 3LetterWords.csv in Resources */,
+				DB22EB462BDECB20004C5A37 /* 5LetterWords.csv in Resources */,
 				DB71A4902BD84BBF00AFCF9B /* Preview Assets.xcassets in Resources */,
 				DB71A5192BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */,
 				DB71A48D2BD84BBF00AFCF9B /* Assets.xcassets in Resources */,
+				DB22EB502BDED3A0004C5A37 /* 4LetterWords.csv in Resources */,
+				DB22EB432BDECB20004C5A37 /* 6LetterWords.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,8 +434,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22EB442BDECB20004C5A37 /* 6LetterWords.csv in Resources */,
 				DB71A4DB2BD84F2700AFCF9B /* Assets.xcassets in Resources */,
+				DB22EB472BDECB20004C5A37 /* 5LetterWords.csv in Resources */,
+				DB22EB4A2BDECB20004C5A37 /* 3LetterWords.csv in Resources */,
 				DB71A51A2BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */,
+				DB22EB512BDED3A0004C5A37 /* 4LetterWords.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +447,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB22EB452BDECB20004C5A37 /* 6LetterWords.csv in Resources */,
 				DB71A4DC2BD84F2800AFCF9B /* Assets.xcassets in Resources */,
+				DB22EB482BDECB20004C5A37 /* 5LetterWords.csv in Resources */,
+				DB22EB4B2BDECB20004C5A37 /* 3LetterWords.csv in Resources */,
 				DB71A51B2BD85C9F00AFCF9B /* Lovely Madness.otf in Resources */,
+				DB22EB522BDED3A0004C5A37 /* 4LetterWords.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +467,11 @@
 				DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5022BD8538D00AFCF9B /* MainTabView.swift in Sources */,
+				DB22EB102BDE8AEF004C5A37 /* getAPICalls.swift in Sources */,
 				DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 				DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */,
+				DB22EB192BDE9997004C5A37 /* TAOptionView.swift in Sources */,
+				DB22EB542BDED43E004C5A37 /* Words.swift in Sources */,
 				DB71A4F62BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50B2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB71A5252BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
@@ -425,8 +494,11 @@
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
 				DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
+				DB22EB112BDE8AEF004C5A37 /* getAPICalls.swift in Sources */,
+				DB22EB1A2BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
+				DB22EB552BDED43E004C5A37 /* Words.swift in Sources */,
 				DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 				DB71A5032BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A4FF2BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
@@ -446,8 +518,11 @@
 				DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5042BD8538D00AFCF9B /* MainTabView.swift in Sources */,
+				DB22EB122BDE8AEF004C5A37 /* getAPICalls.swift in Sources */,
 				DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 				DB71A4DE2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
+				DB22EB1B2BDE9997004C5A37 /* TAOptionView.swift in Sources */,
+				DB22EB562BDED43E004C5A37 /* Words.swift in Sources */,
 				DB71A4F82BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50D2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
@@ -774,6 +849,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB22EB132BDE8E31004C5A37 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB22EB142BDE8E31004C5A37 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB22EB132BDE8E31004C5A37 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		DB22EB162BDE8E31004C5A37 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB22EB132BDE8E31004C5A37 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB71A47D2BD84BBD00AFCF9B /* Project object */;
 }

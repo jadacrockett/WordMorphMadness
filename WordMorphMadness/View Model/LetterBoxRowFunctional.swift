@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LetterBoxRowFunctional: View {
     
-    var word: String
+    @State var word: String
     var row: [GridItem] {
         [GridItem(.fixed(CGFloat(word.count)))]
     }
@@ -21,50 +21,76 @@ struct LetterBoxRowFunctional: View {
             return 75
         }
     }
-    private let staticletterBoxArray: [LetterBox]
-    var gamePlayArray: [LetterBox] = []
+    @State private var staticletterBoxArray: [LetterBox]
+    @State var gamePlayArray: [LetterBoxRow] = []
     @State var letterBoxArray: [LetterBox]
     @State var selected = -1;
     @State private var userEntry: String = ""
     @FocusState private var keyboardFocused: Bool
+    @State var sucessfullWords: [String]
     
     var body: some View {
-        VStack {
-            LazyHGrid(rows: row) {
-                ForEach (0...word.count - 1, id: \.self) { num in
-                    letterBoxArray[num]
-                        .frame(width: boxSize, height: boxSize)
-                        .onTapGesture {
-                            changeStatusToChanging(index: num, len: word.count, array: &letterBoxArray)
-                            selected = num
-                            //print(selected)
-                        }
+        ScrollView {
+            VStack {
+                ForEach(0..<gamePlayArray.count, id: \.self) { num in
+                    gamePlayArray[num]
                 }
-            }
-            TextField("", text: $userEntry)
-                .keyboardType(.alphabet)
-                .autocorrectionDisabled(true)
-                .tint(Color.clear)
-                .foregroundStyle(Color.clear)
-                .focused($keyboardFocused)
-                .onChange(of: selected) {
-                    resetArray(newArray: &letterBoxArray, oldArray: staticletterBoxArray)
-                }
-                .onChange(of: userEntry) {
-                    //print(userEntry)
-                    if (selected >= 0) && (!userEntry.isEmpty) {
-                        letterBoxArray[selected].letter = String(userEntry.last!)
+                LazyHGrid(rows: row) {
+                    ForEach (0...word.count - 1, id: \.self) { num in
+                        letterBoxArray[num]
+                            .frame(width: boxSize, height: boxSize)
+                            .onTapGesture {
+                                changeStatusToChanging(index: num, len: word.count, array: &letterBoxArray)
+                                selected = num
+                                //print(selected)
+                            }
                     }
                 }
+                TextField("", text: $userEntry)
+                    .keyboardType(.alphabet)
+                    .autocorrectionDisabled(true)
+                    .tint(Color.clear)
+                    .foregroundStyle(Color.clear)
+                    .focused($keyboardFocused)
+                    .onChange(of: selected) {
+                        resetArray(newArray: &letterBoxArray, oldArray: staticletterBoxArray)
+                    }
+                    .onChange(of: userEntry) {
+                        //print(userEntry)
+                        if (selected >= 0) && (!userEntry.isEmpty) {
+                            letterBoxArray[selected].letter = String(userEntry.last!)
+                        }
+                    }
+                    .onSubmit {
+                        let newWord = getWord(array: letterBoxArray).lowercased()
+                        if checkWord(word: newWord) && !sucessfullWords.contains(newWord)  {
+                            var statusArray = Array(repeating: 2, count: newWord.count)
+                            statusArray[selected] = 3
+                            let add = LetterBoxRow(word: newWord, wordStatusArray: statusArray)
+                            gamePlayArray += [add]
+                            letterBoxArray = getLetterBoxArray(word: newWord)
+                            staticletterBoxArray = letterBoxArray
+                            sucessfullWords += [newWord]
+                        } else {
+                            var statusArray = Array(repeating: 2, count: newWord.count)
+                            statusArray[selected] = 4
+                            let add = LetterBoxRow(word: newWord, wordStatusArray: statusArray)
+                            gamePlayArray += [add]
+                            letterBoxArray = staticletterBoxArray
+                        }
+                        keyboardFocused = true
+                    }
 
-            
-        }.onAppear(perform: {keyboardFocused = true})
+                
+            }.onAppear(perform: {keyboardFocused = true})
+        }
     }
     
     init(word: String) {
         self.word = word
         staticletterBoxArray = getLetterBoxArray(word: word)
         self.letterBoxArray = getLetterBoxArray(word: word)
+        sucessfullWords = [word]
     }
     
 }
@@ -91,6 +117,14 @@ func resetArray(newArray: inout [LetterBox], oldArray: [LetterBox]) {
     for idx in 0..<newArray.count {
         newArray[idx].letter = oldArray[idx].letter
     }
+}
+
+func getWord(array: [LetterBox]) -> String {
+    var word = ""
+    for box in array {
+        word += box.letter
+    }
+    return word
 }
 
 struct LetterBoxRowFunctionalPreview: PreviewProvider {
