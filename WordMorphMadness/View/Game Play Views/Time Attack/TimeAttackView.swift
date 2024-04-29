@@ -17,44 +17,34 @@ struct TimeAttackView: View {
     @State var wrongWords: Int = 0
     private var difficulty: TAOptionView.Difficulty
     
+    private var time: Int {
+        switch difficulty {
+        case .easy:
+            return 90
+        case .medium:
+            return 60
+        case .hard:
+            return 30
+        }
+    }
+    
     var body: some View {
 
         let wordView = LetterBoxRowFunctional(word: currWord, sucessfulWords: $sucessfulWords, repeatedWords: $repeatedWords, wrongWords: $wrongWords)
         ZStack {
             Color.indigo2.ignoresSafeArea()
             wordView
-                .padding(.top, 0.1)
+                .padding(.top, 0.2)
                 
         }
         .onChange(of: sucessfulWords.count) {
-            switch difficulty {
-            case .easy:
-                score += 100
-            case .medium:
-                score += 80
-            case .hard:
-                score += 60
-            }
+            score += 100
         }
         .onChange(of: repeatedWords) {
-            switch difficulty {
-            case .easy:
-                score += 0
-            case .medium:
-                score -= 10
-            case .hard:
-                score -= 25
-            }
+            score -= 25
         }
         .onChange(of: wrongWords) {
-            switch difficulty {
-            case .easy:
-                score -= 10
-            case .medium:
-                score -= 25
-            case .hard:
-                score -= 50
-            }
+            score -= 50
         }
         .toolbar {
             ToolbarItem {
