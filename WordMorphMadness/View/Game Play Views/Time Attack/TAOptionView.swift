@@ -64,7 +64,7 @@ struct TAOptionView: View {
                     }.pickerStyle(.segmented)
                     
                 } else {
-                    TimeAttackView(currWord: currWord)
+                    TimeAttackView(currWord: currWord, difficulty: selectedDifficulty)
                 }
             }
         }

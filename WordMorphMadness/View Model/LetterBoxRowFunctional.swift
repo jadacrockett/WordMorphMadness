@@ -27,7 +27,9 @@ struct LetterBoxRowFunctional: View {
     @State var selected = -1;
     @State private var userEntry: String = ""
     @FocusState private var keyboardFocused: Bool
-    @State var sucessfullWords: [String]
+    @Binding var sucessfulWords: [String]
+    @Binding var wrongWords: Int
+    @Binding var repeatedWords: Int
     
     var body: some View {
         ScrollView {
@@ -63,20 +65,25 @@ struct LetterBoxRowFunctional: View {
                     }
                     .onSubmit {
                         let newWord = getWord(array: letterBoxArray).lowercased()
-                        if checkWord(word: newWord) && !sucessfullWords.contains(newWord)  {
+                        if checkWord(word: newWord) {
                             var statusArray = Array(repeating: 2, count: newWord.count)
                             statusArray[selected] = 3
                             let add = LetterBoxRow(word: newWord, wordStatusArray: statusArray)
                             gamePlayArray += [add]
                             letterBoxArray = getLetterBoxArray(word: newWord)
                             staticletterBoxArray = letterBoxArray
-                            sucessfullWords += [newWord]
+                            if !sucessfulWords.contains(newWord) {
+                                sucessfulWords += [newWord]
+                            } else {
+                                repeatedWords += 1
+                            }
                         } else {
                             var statusArray = Array(repeating: 2, count: newWord.count)
                             statusArray[selected] = 4
                             let add = LetterBoxRow(word: newWord, wordStatusArray: statusArray)
                             gamePlayArray += [add]
                             letterBoxArray = staticletterBoxArray
+                            wrongWords += 1
                         }
                         keyboardFocused = true
                     }
@@ -86,11 +93,13 @@ struct LetterBoxRowFunctional: View {
         }
     }
     
-    init(word: String) {
+    init(word: String, sucessfulWords: Binding<[String]>, repeatedWords: Binding<Int>, wrongWords: Binding<Int>) {
         self.word = word
         staticletterBoxArray = getLetterBoxArray(word: word)
         self.letterBoxArray = getLetterBoxArray(word: word)
-        sucessfullWords = [word]
+        self._sucessfulWords = sucessfulWords
+        self._repeatedWords = repeatedWords
+        self._wrongWords = wrongWords
     }
     
 }
@@ -127,10 +136,8 @@ func getWord(array: [LetterBox]) -> String {
     return word
 }
 
-struct LetterBoxRowFunctionalPreview: PreviewProvider {
-    static var previews: some View {
-        LetterBoxRowFunctional(word: "love")
-    }
-}
+
+
+
 
 
