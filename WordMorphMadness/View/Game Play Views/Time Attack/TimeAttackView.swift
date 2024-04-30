@@ -30,6 +30,8 @@ struct TimeAttackView: View {
         }
     }
     
+    @State var settingsPresented: Bool = false
+    
     private var totalTime: DispatchTimeInterval {
         switch difficulty {
         case .easy:
@@ -66,9 +68,21 @@ struct TimeAttackView: View {
         .toolbar {
             ToolbarItem {
                 Button("", systemImage: "gearshape.fill") {
-                    
+                    settingsPresented.toggle()
                 }
                 .backgroundStyle(Color.platinum)
+                .sheet(isPresented: $settingsPresented, content: {
+                    NavigationStack {
+                        ZStack {
+                            Color.indigo2.ignoresSafeArea()
+                            NavigationLink("Exit") {
+                                MainTabView().navigationBarBackButtonHidden(true)
+                                    .ignoresSafeArea()
+                            }.buttonStyle(GameOverButtonStyle())
+                        }
+                    }
+                })
+                
             }
             ToolbarItemGroup(placement: .topBarLeading) {
                 Text("Score: \(score)")
