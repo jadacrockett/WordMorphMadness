@@ -25,7 +25,8 @@ struct MainTabView: View {
                 ResultsView()
                     .tabItem { Label("Results", systemImage: "clipboard")}
                     .tag(3)
-            }.toolbar {
+            }
+            .toolbar {
                 ToolbarItem {
                     Button("", systemImage: "gearshape.fill") {
                         

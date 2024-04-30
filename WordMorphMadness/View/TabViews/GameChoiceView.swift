@@ -11,7 +11,7 @@ struct MyButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .foregroundColor(.platinum)
-            .frame(height: 60)
+            .frame(minHeight: 40, idealHeight: 60)
             .frame(minWidth: 250)
             .background(Color.rubyRed)
             .cornerRadius(8)
@@ -30,6 +30,8 @@ struct GamePlayView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 300, height: 300)
+                    Spacer()
+                        .frame(height: 0)
                     NavigationLink("Classic Mode") {
                         ClassicView()
                             .navigationBarBackButtonHidden(true)
@@ -55,6 +57,8 @@ struct GamePlayView: View {
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())
+                    Spacer()
+                        .frame(height: 50)
                 }
             }
             .font(.system(size: 25))
