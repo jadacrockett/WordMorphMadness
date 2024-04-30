@@ -83,6 +83,7 @@
 		DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
 		DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
 		DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
+		DB9D2D442BE086B90041A4F3 /* EOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D2D432BE086B90041A4F3 /* EOptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		DB71A51C2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRowFunctional.swift; sourceTree = "<group>"; };
 		DB71A5242BD94E6000AFCF9B /* LetterBoxRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterBoxRow.swift; sourceTree = "<group>"; };
 		DB71A5282BD97C2900AFCF9B /* getNewWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNewWord.swift; sourceTree = "<group>"; };
+		DB9D2D432BE086B90041A4F3 /* EOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,10 +283,10 @@
 		DB71A4EC2BD8527900AFCF9B /* Game Play Views */ = {
 			isa = PBXGroup;
 			children = (
+				DB9D2D422BE0869B0041A4F3 /* Endless */,
 				DB22EB0A2BDE8561004C5A37 /* Time Attack */,
 				DB71A4ED2BD8528800AFCF9B /* ClassicView.swift */,
 				DB71A4F52BD852A400AFCF9B /* ChallengeView.swift */,
-				DB71A4F92BD852AE00AFCF9B /* EndlessView.swift */,
 				DB71A4FD2BD852BA00AFCF9B /* MultiplayerView.swift */,
 			);
 			path = "Game Play Views";
@@ -306,6 +308,15 @@
 				DB71A5182BD85C9F00AFCF9B /* Lovely Madness.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DB9D2D422BE0869B0041A4F3 /* Endless */ = {
+			isa = PBXGroup;
+			children = (
+				DB71A4F92BD852AE00AFCF9B /* EndlessView.swift */,
+				DB9D2D432BE086B90041A4F3 /* EOptionView.swift */,
+			);
+			path = Endless;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,6 +487,7 @@
 				DB71A51D2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
 				DB71A4FA2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */,
+				DB9D2D442BE086B90041A4F3 /* EOptionView.swift in Sources */,
 				DB08980F2BE0323A006C17C5 /* TestView.swift in Sources */,
 				DB71A5072BD853BF00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */,
