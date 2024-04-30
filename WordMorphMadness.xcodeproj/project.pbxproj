@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
-		DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
-		DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB08980F2BE0323A006C17C5 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB08980E2BE0323A006C17C5 /* TestView.swift */; };
 		DB22EB152BDE8E31004C5A37 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = DB22EB142BDE8E31004C5A37 /* GoogleSignIn */; };
 		DB22EB172BDE8E31004C5A37 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB22EB162BDE8E31004C5A37 /* GoogleSignInSwift */; };
 		DB22EB192BDE9997004C5A37 /* TAOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB182BDE9997004C5A37 /* TAOptionView.swift */; };
@@ -30,6 +28,12 @@
 		DB22EB542BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
 		DB22EB552BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
 		DB22EB562BDED43E004C5A37 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB532BDED43E004C5A37 /* Words.swift */; };
+		DB22EB5F2BE020E4004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB602BE020E5004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB612BE020E5004C5A37 /* TimeAttackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */; };
+		DB22EB622BE020F4004C5A37 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB5B2BE0202E004C5A37 /* GameOverView.swift */; };
+		DB22EB632BE020F7004C5A37 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB5B2BE0202E004C5A37 /* GameOverView.swift */; };
+		DB22EB642BE020F9004C5A37 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB22EB5B2BE0202E004C5A37 /* GameOverView.swift */; };
 		DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */; };
 		DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */; };
 		DB71A48D2BD84BBF00AFCF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB71A48C2BD84BBF00AFCF9B /* Assets.xcassets */; };
@@ -101,6 +105,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB08980E2BE0323A006C17C5 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DB22EB0B2BDE8576004C5A37 /* TimeAttackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackView.swift; sourceTree = "<group>"; };
 		DB22EB182BDE9997004C5A37 /* TAOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOptionView.swift; sourceTree = "<group>"; };
 		DB22EB3F2BDECB20004C5A37 /* 6LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 6LetterWords.csv; sourceTree = "<group>"; };
@@ -108,6 +113,7 @@
 		DB22EB412BDECB20004C5A37 /* 3LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3LetterWords.csv; sourceTree = "<group>"; };
 		DB22EB4F2BDED3A0004C5A37 /* 4LetterWords.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 4LetterWords.csv; path = WordMorphMadness/MyPlayground.playground/Resources/4LetterWords.csv; sourceTree = SOURCE_ROOT; };
 		DB22EB532BDED43E004C5A37 /* Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Words.swift; path = WordMorphMadness/MyPlayground.playground/Sources/Words.swift; sourceTree = SOURCE_ROOT; };
+		DB22EB5B2BE0202E004C5A37 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		DB71A4852BD84BBD00AFCF9B /* WordMorphMadness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordMorphMadness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB71A4882BD84BBD00AFCF9B /* WordMorphMadnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMorphMadnessApp.swift; sourceTree = "<group>"; };
 		DB71A48A2BD84BBD00AFCF9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -250,6 +256,8 @@
 				DB71A4EC2BD8527900AFCF9B /* Game Play Views */,
 				DB71A5012BD8538C00AFCF9B /* MainTabView.swift */,
 				DB71A5052BD853AA00AFCF9B /* TabViews */,
+				DB22EB5B2BE0202E004C5A37 /* GameOverView.swift */,
+				DB08980E2BE0323A006C17C5 /* TestView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,7 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4EE2BD8528800AFCF9B /* ClassicView.swift in Sources */,
-				DB22EB0C2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
+				DB22EB612BE020E5004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5022BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */,
@@ -468,11 +476,13 @@
 				DB22EB542BDED43E004C5A37 /* Words.swift in Sources */,
 				DB71A4F62BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50B2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
+				DB22EB622BE020F4004C5A37 /* GameOverView.swift in Sources */,
 				DB71A5252BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB71A4FE2BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
 				DB71A51D2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
 				DB71A4FA2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4892BD84BBD00AFCF9B /* WordMorphMadnessApp.swift in Sources */,
+				DB08980F2BE0323A006C17C5 /* TestView.swift in Sources */,
 				DB71A5072BD853BF00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */,
 				DB71A50F2BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
@@ -484,10 +494,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A51E2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
+				DB22EB602BE020E5004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
-				DB22EB0D2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
 				DB22EB1A2BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
@@ -499,6 +509,7 @@
 				DB71A4F72BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A49A2BD84BBF00AFCF9B /* WordMorphMadnessTests.swift in Sources */,
 				DB71A5082BD853BF00AFCF9B /* StoreView.swift in Sources */,
+				DB22EB632BE020F7004C5A37 /* GameOverView.swift in Sources */,
 				DB71A5142BD85A8000AFCF9B /* LetterBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,7 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB71A4F02BD8528800AFCF9B /* ClassicView.swift in Sources */,
-				DB22EB0E2BDE8576004C5A37 /* TimeAttackView.swift in Sources */,
+				DB22EB5F2BE020E4004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5042BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */,
@@ -517,6 +528,7 @@
 				DB22EB562BDED43E004C5A37 /* Words.swift in Sources */,
 				DB71A4F82BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50D2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
+				DB22EB642BE020F9004C5A37 /* GameOverView.swift in Sources */,
 				DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB71A5002BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
 				DB71A51F2BD85DEF00AFCF9B /* LetterBoxRowFunctional.swift in Sources */,
