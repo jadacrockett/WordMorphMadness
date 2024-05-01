@@ -65,9 +65,6 @@
 		DB71A50B2BD853DD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50A2BD853DD00AFCF9B /* ResultsView.swift */; };
 		DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50A2BD853DD00AFCF9B /* ResultsView.swift */; };
 		DB71A50D2BD853DD00AFCF9B /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50A2BD853DD00AFCF9B /* ResultsView.swift */; };
-		DB71A50F2BD853F700AFCF9B /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
-		DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
-		DB71A5112BD853F700AFCF9B /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
 		DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5122BD85A8000AFCF9B /* LetterBox.swift */; };
 		DB71A5142BD85A8000AFCF9B /* LetterBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5122BD85A8000AFCF9B /* LetterBox.swift */; };
 		DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5122BD85A8000AFCF9B /* LetterBox.swift */; };
@@ -83,6 +80,9 @@
 		DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
 		DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
 		DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A5282BD97C2900AFCF9B /* getNewWord.swift */; };
+		DB727AAD2BE1EECD000F3C04 /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
+		DB727AAE2BE1EECD000F3C04 /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
+		DB727AAF2BE1EECF000F3C04 /* GameChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB71A50E2BD853F700AFCF9B /* GameChoiceView.swift */; };
 		DB9D2D442BE086B90041A4F3 /* EOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D2D432BE086B90041A4F3 /* EOptionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -476,6 +476,7 @@
 				DB71A5292BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5022BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5132BD85A8000AFCF9B /* LetterBox.swift in Sources */,
+				DB727AAD2BE1EECD000F3C04 /* GameChoiceView.swift in Sources */,
 				DB71A48B2BD84BBD00AFCF9B /* ContentView.swift in Sources */,
 				DB22EB192BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB22EB542BDED43E004C5A37 /* Words.swift in Sources */,
@@ -491,7 +492,6 @@
 				DB08980F2BE0323A006C17C5 /* TestView.swift in Sources */,
 				DB71A5072BD853BF00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */,
-				DB71A50F2BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,11 +504,11 @@
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
+				DB727AAE2BE1EECD000F3C04 /* GameChoiceView.swift in Sources */,
 				DB22EB1A2BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB71A52A2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A50C2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB22EB552BDED43E004C5A37 /* Words.swift in Sources */,
-				DB71A5102BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 				DB71A5032BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A4FF2BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,
 				DB71A5262BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
@@ -529,6 +529,7 @@
 				DB71A52B2BD97C2900AFCF9B /* getNewWord.swift in Sources */,
 				DB71A5042BD8538D00AFCF9B /* MainTabView.swift in Sources */,
 				DB71A5152BD85A8000AFCF9B /* LetterBox.swift in Sources */,
+				DB727AAF2BE1EECF000F3C04 /* GameChoiceView.swift in Sources */,
 				DB71A4DE2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
 				DB22EB1B2BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB22EB562BDED43E004C5A37 /* Words.swift in Sources */,
@@ -542,7 +543,6 @@
 				DB71A4A42BD84BBF00AFCF9B /* WordMorphMadnessUITests.swift in Sources */,
 				DB71A5092BD853BF00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4A62BD84BBF00AFCF9B /* WordMorphMadnessUITestsLaunchTests.swift in Sources */,
-				DB71A5112BD853F700AFCF9B /* GameChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

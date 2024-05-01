@@ -32,10 +32,10 @@ struct GamePlayView: View {
                         .frame(width: 300, height: 300)
                     Spacer()
                         .frame(height: 0)
-                    NavigationLink("Classic Mode") {
+                    /*NavigationLink("Classic Mode") {
                         ClassicView()
                             .navigationBarBackButtonHidden(true)
-                    }
+                    }*/
                     .buttonStyle(MyButtonStyle())
                     NavigationLink("Time Attack Mode") {
                         TAOptionView()
@@ -52,11 +52,11 @@ struct GamePlayView: View {
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())
-                    NavigationLink("Multiplayer Mode") {
+                    /*NavigationLink("Multiplayer Mode") {
                         MultiplayerView()
                             .navigationBarBackButtonHidden(true)
                     }
-                    .buttonStyle(MyButtonStyle())
+                    .buttonStyle(MyButtonStyle())*/
                     Spacer()
                         .frame(height: 50)
                 }

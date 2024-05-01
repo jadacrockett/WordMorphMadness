@@ -49,7 +49,7 @@ struct GameOverView: View {
                                 .foregroundStyle(Color.platinum)
                             Spacer()
                                 .frame(height: 150)
-                            NavigationLink(destination: MainTabView().navigationBarBackButtonHidden(true)
+                            NavigationLink(destination: GamePlayView().navigationBarBackButtonHidden(true)
                                 .ignoresSafeArea())
                             {
                                 Text("Done!")

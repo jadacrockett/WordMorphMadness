@@ -40,7 +40,7 @@ struct SplashView: View {
         
         ZStack {
             if self.isActive {
-                MainTabView()
+                GamePlayView()
             } else {
                 Color.platinum.ignoresSafeArea()
                 VStack {
