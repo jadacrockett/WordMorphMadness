@@ -42,7 +42,7 @@ struct MainTabView: View {
                         .font(.system(size: 25))
                 }
             }.foregroundColor(.rubyRed)
-        }
+        }//.toolbar(.hidden, for: .navigationBar)
     }
 }
 

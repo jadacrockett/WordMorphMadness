@@ -20,13 +20,21 @@ struct TimeAttackView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeElapsed = 0
     private var timeLeft: Int {
+        var returnValue = 0
+        
         switch difficulty {
         case .easy:
-            return 60 - timeElapsed
+            returnValue = 60 - timeElapsed
         case .medium:
-            return 45 - timeElapsed
+            returnValue = 45 - timeElapsed
         case .hard:
-            return 30 - timeElapsed
+            returnValue = 30 - timeElapsed
+        }
+        
+        if returnValue >= 0 {
+            return returnValue
+        } else {
+            return 0
         }
     }
     
@@ -51,9 +59,21 @@ struct TimeAttackView: View {
             if gameOver {
                 GameOverView(score: score)
             } else {
-                Color.indigo2.ignoresSafeArea()
-                wordView
-                    .padding(.top, 0.2)
+                NavigationStack {
+                    ZStack{
+                        Color.indigo2.ignoresSafeArea()
+                        VStack{
+                            wordView
+                                .padding(.top, 0.2)
+                            NavigationLink(destination: GameOverView(score: score ).navigationBarBackButtonHidden(true)
+                                .ignoresSafeArea())
+                            {
+                                Text("Done!")
+                                    .font(.custom("Lovely Madness", size: 30))
+                            }.buttonStyle(GameOverButtonStyle())
+                        }
+                    }
+                }
             }
         }
         .onChange(of: sucessfulWords.count) {
@@ -66,24 +86,6 @@ struct TimeAttackView: View {
             score -= 50
         }
         .toolbar {
-            ToolbarItem {
-                Button("", systemImage: "gearshape.fill") {
-                    settingsPresented.toggle()
-                }
-                .backgroundStyle(Color.platinum)
-                .sheet(isPresented: $settingsPresented, content: {
-                    NavigationStack {
-                        ZStack {
-                            Color.indigo2.ignoresSafeArea()
-                            NavigationLink("Exit") {
-                                MainTabView().navigationBarBackButtonHidden(true)
-                                    .ignoresSafeArea()
-                            }.buttonStyle(GameOverButtonStyle())
-                        }
-                    }
-                })
-                
-            }
             ToolbarItemGroup(placement: .topBarLeading) {
                 Text("Score: \(score)")
                     .font(.system(size: 25))
@@ -120,7 +122,7 @@ struct TAPreviewContainer: View {
     @State var wrongWords: Int = 0
     
     var body: some View {
-        LetterBoxRowFunctional(word: "Cake", sucessfulWords: $sucessfulWords, repeatedWords: $repeatedWords, wrongWords: $wrongWords)
+        TimeAttackView(currWord: "Cake", difficulty: .hard)
     }
     
     

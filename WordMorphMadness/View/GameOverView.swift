@@ -58,7 +58,7 @@ struct GameOverView: View {
                             
                         }.toolbar(.hidden, for: .navigationBar)
                     }
-                }
+                }.toolbar(.hidden, for: .navigationBar)
             }
         }
         

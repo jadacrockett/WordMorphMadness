@@ -48,7 +48,7 @@ struct GamePlayView: View {
                     }
                     .buttonStyle(MyButtonStyle())
                     NavigationLink("Endless Mode") {
-                        EndlessView()
+                        EOptionView()
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())
@@ -62,7 +62,7 @@ struct GamePlayView: View {
                 }
             }
             .font(.system(size: 25))
-        }
+        }//.toolbar(.hidden, for: .navigationBar)
 
     }
 }
