@@ -48,3 +48,7 @@ func checkWord(word: String) -> Bool {
         return false
     }
 }
+
+
+let challengeLevelWordsByLevel = ["None", "cold"]
+let challengeLevelDictionary = ["cold": ["wolf", 2]]

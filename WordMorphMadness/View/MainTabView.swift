@@ -19,7 +19,7 @@ struct MainTabView: View {
                 StoreView()
                     .tabItem { Label("Store", systemImage: "storefront.fill") }
                     .tag(1)
-                GamePlayView()
+                GameChoiceView()
                     .tabItem { Label("Play", systemImage: "arrowtriangle.right.circle.fill")}
                     .tag(2)
                 ResultsView()

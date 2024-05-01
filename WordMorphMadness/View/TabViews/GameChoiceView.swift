@@ -19,7 +19,7 @@ struct MyButtonStyle: ButtonStyle {
     }
 }
 
-struct GamePlayView: View {
+struct GameChoiceView: View {
     
     var body: some View {
         NavigationView {
@@ -43,7 +43,7 @@ struct GamePlayView: View {
                     }
                     .buttonStyle(MyButtonStyle())
                     NavigationLink("Challenge Mode") {
-                        ChalllengeView()
+                        ChallengeLevelView()
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())
@@ -68,5 +68,5 @@ struct GamePlayView: View {
 }
 
 #Preview {
-    GamePlayView()
+    GameChoiceView()
 }

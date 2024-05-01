@@ -1,34 +1,34 @@
 //
-//  GameOverView.swift
+//  ChallengeGameOver.swift
 //  WordMorphMadness
 //
-//  Created by Jada Crockett on 4/29/24.
+//  Created by Jada Crockett on 4/30/24.
 //
 
 import SwiftUI
 
-struct GameOverButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundColor(.indigo2)
-            .frame(minHeight: 50, idealHeight: 150)
-            .frame(minWidth: 150)
-            .background(Color.platinum)
-            .cornerRadius(8)
-
-    }
-}
-
-struct GameOverView: View {
+struct ChallengeGameOver: View {
     
-    var score: Int
+    @State private var level: Int
     @State var returnHome = false
+    @State var letterSwaps: Int
     
-    init(score: Int) {
-        self.score = score
-            UITableView.appearance().backgroundColor = .green // Uses UIColor
+    init(level: Int, letterSwaps: Int ) {
+        self.level = level
+        self.letterSwaps = letterSwaps
+    }
+    
+    var optimalSwaps: Int {
+        challengeLevelDictionary[challengeLevelWordsByLevel[level]]?[1] as! Int
+    }
+    
+    var success: String {
+        if letterSwaps == optimalSwaps {
+            return "Success"
+        } else {
+            return "Failed"
         }
-    
+    }
     
     var body: some View {
         ZStack {
@@ -39,12 +39,22 @@ struct GameOverView: View {
                     ZStack {
                         Color.indigo2.ignoresSafeArea()
                         VStack {
-                            Text("Game Over!")
+                            Text("Level \(level)")
                                 .font(.custom("Lovely Madness", size: 40))
                                 .foregroundStyle(Color.platinum)
                             Spacer()
                                 .frame(height: 30)
-                            Text("Score: \(score)")
+                            Text("Total Moves: \(letterSwaps)")
+                                .font(.custom("Lovely Madness", size: 30))
+                                .foregroundStyle(Color.platinum)
+                            Spacer()
+                                .frame(height: 30)
+                            Text("Optimal Moves: \(optimalSwaps)")
+                                .font(.custom("Lovely Madness", size: 30))
+                                .foregroundStyle(Color.platinum)
+                            Spacer()
+                                .frame(height: 150)
+                            Text("\(success)!")
                                 .font(.custom("Lovely Madness", size: 30))
                                 .foregroundStyle(Color.platinum)
                             Spacer()
@@ -66,5 +76,5 @@ struct GameOverView: View {
 }
 
 #Preview {
-    GameOverView(score: 321)
+    ChallengeGameOver(level: 1, letterSwaps: 2)
 }
