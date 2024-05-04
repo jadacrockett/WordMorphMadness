@@ -87,6 +87,7 @@
 		DB727AB42BE1F51F000F3C04 /* ChallengeLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB22BE1F303000F3C04 /* ChallengeLevelView.swift */; };
 		DB727AB52BE1F51F000F3C04 /* ChallengeLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB22BE1F303000F3C04 /* ChallengeLevelView.swift */; };
 		DB727AB72BE1FA30000F3C04 /* ChallengeGameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB62BE1FA30000F3C04 /* ChallengeGameOver.swift */; };
+		DB727AB92BE2E647000F3C04 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB82BE2E647000F3C04 /* ScrumStore.swift */; };
 		DB9D2D442BE086B90041A4F3 /* EOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D2D432BE086B90041A4F3 /* EOptionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		DB71A5282BD97C2900AFCF9B /* getNewWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNewWord.swift; sourceTree = "<group>"; };
 		DB727AB22BE1F303000F3C04 /* ChallengeLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeLevelView.swift; sourceTree = "<group>"; };
 		DB727AB62BE1FA30000F3C04 /* ChallengeGameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGameOver.swift; sourceTree = "<group>"; };
+		DB727AB82BE2E647000F3C04 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		DB9D2D432BE086B90041A4F3 /* EOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -272,6 +274,7 @@
 				DB22EB532BDED43E004C5A37 /* Words.swift */,
 				DB22EB1E2BDEBB83004C5A37 /* Word Files */,
 				DB71A5282BD97C2900AFCF9B /* getNewWord.swift */,
+				DB727AB82BE2E647000F3C04 /* ScrumStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				DB22EB192BDE9997004C5A37 /* TAOptionView.swift in Sources */,
 				DB22EB542BDED43E004C5A37 /* Words.swift in Sources */,
 				DB727AB72BE1FA30000F3C04 /* ChallengeGameOver.swift in Sources */,
+				DB727AB92BE2E647000F3C04 /* ScrumStore.swift in Sources */,
 				DB71A4F62BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50B2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB22EB622BE020F4004C5A37 /* GameOverView.swift in Sources */,

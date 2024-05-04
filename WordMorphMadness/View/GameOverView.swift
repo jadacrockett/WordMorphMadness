@@ -56,11 +56,11 @@ struct GameOverView: View {
                                     .font(.custom("Lovely Madness", size: 30))
                             }.buttonStyle(GameOverButtonStyle())
                             
-                        }.toolbar(.hidden, for: .navigationBar)
+                        }
                     }
                 }.toolbar(.hidden, for: .navigationBar)
             }
-        }
+        }.toolbar(.hidden, for: .navigationBar)
         
     }
 }

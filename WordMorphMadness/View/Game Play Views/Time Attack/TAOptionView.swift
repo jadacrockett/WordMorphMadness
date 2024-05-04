@@ -62,9 +62,18 @@ struct TAOptionView: View {
                         }).padding(20).buttonStyle(SubmitButtonStyle())
                         
                     }.pickerStyle(.segmented)
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                NavigationLink("< Back") {
+                                    GameChoiceView()
+                                        .navigationBarBackButtonHidden()
+                                }
+                            }
+                        }
                     
                 } else {
                     TimeAttackView(currWord: currWord, difficulty: selectedDifficulty)
+
                 }
             }
         }

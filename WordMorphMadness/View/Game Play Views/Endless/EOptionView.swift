@@ -39,6 +39,14 @@ struct EOptionView: View {
                         }).padding(20).buttonStyle(SubmitButtonStyle())
                         
                     }.pickerStyle(.segmented)
+                        .toolbar {
+                            ToolbarItem(placement: .topBarLeading) {
+                                NavigationLink("< Back") {
+                                    GameChoiceView()
+                                        .navigationBarBackButtonHidden()
+                                }
+                            }
+                        }
                     
                 } else {
                     EndlessView(currWord: getRandomWord(length: selectedWordLength))

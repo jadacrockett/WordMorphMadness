@@ -85,6 +85,13 @@ struct ChallengeLevelView: View {
                         }
                     }
                 }
+            }.toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    NavigationLink("< Back") {
+                        GameChoiceView()
+                            .navigationBarBackButtonHidden()
+                    }
+                }
             }
         }
     }

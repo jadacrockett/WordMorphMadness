@@ -50,5 +50,5 @@ func checkWord(word: String) -> Bool {
 }
 
 
-let challengeLevelWordsByLevel = ["None", "cold"]
-let challengeLevelDictionary = ["cold": ["wolf", 2]]
+let challengeLevelWordsByLevel = ["None", "lamp", "pain", "day" ,"late" ,"cold", "dust", "huge", "fire", "hide", "cute", "sane"]
+let challengeLevelDictionary = ["lamp": ["limp", 1], "pain": ["gain", 1], "day": ["why", 2], "late": ["line", 2] ,"cold": ["wolf", 2], "dust": ["mist", 2], "huge": ["hide", 3] ,"fire": ["worn", 3], "hide": ["love", 3], "cute": ["fine", 3], "sane": ["rich", 4] ]
