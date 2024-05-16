@@ -36,17 +36,17 @@ struct GameChoiceView: View {
                         ClassicView()
                             .navigationBarBackButtonHidden(true)
                     }*/
-                    .buttonStyle(MyButtonStyle())
+                    //.buttonStyle(MyButtonStyle())
                     NavigationLink("Time Attack Mode") {
                         TAOptionView()
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())
-                    NavigationLink("Challenge Mode") {
+                    /*NavigationLink("Challenge Mode") {
                         ChallengeLevelView()
                             .navigationBarBackButtonHidden(true)
                     }
-                    .buttonStyle(MyButtonStyle())
+                    .buttonStyle(MyButtonStyle())*/
                     NavigationLink("Endless Mode") {
                         EOptionView()
                             .navigationBarBackButtonHidden(true)
