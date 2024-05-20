@@ -12,7 +12,8 @@ struct EOptionView: View {
     
     @State private var selectedWordLength = 3
     @State private var currWord: String = "Cake"
-    @State private var showTAView = false
+    @State private var showEndlessView = false
+    @Binding var showEOptionView: Bool
     
     var body: some View {
         
@@ -22,7 +23,7 @@ struct EOptionView: View {
             
             ZStack {
                 
-                if !showTAView {
+                
                     VStack {
                         Picker("Word Length", selection: $selectedWordLength) {
                             Text("3").tag(3)
@@ -31,8 +32,7 @@ struct EOptionView: View {
                             Text("6").tag(6)
                         }
                         Button(action: {
-                            currWord = getRandomWord(length: selectedWordLength)
-                            showTAView = true
+                            showEndlessView = true
                         }, label: {
                             Text("Submit")
                                 .bold()
@@ -47,11 +47,19 @@ struct EOptionView: View {
                                 }
                             }
                         }
-                    
-                } else {
-                    EndlessView(currWord: getRandomWord(length: selectedWordLength))
-                }
+                        .fullScreenCover(isPresented: $showEndlessView, content: {
+                            NavigationStack {
+                                EndlessView(currWord: getRandomWord(length: selectedWordLength), backToEOptionView: $showEOptionView)
+                            }
+                        })
+                
             }
         }
     }
+}
+
+#Preview {
+    @State var showEOptionView = true
+    return EOptionView(showEOptionView: $showEOptionView)
+    
 }

@@ -15,7 +15,7 @@ struct TimeAttackView: View {
     @State var sucessfulWords: [String] = []
     @State var repeatedWords: Int = 0
     @State var wrongWords: Int = 0
-    private var difficulty: TAOptionView.Difficulty
+    var difficulty: Difficulty
     @State private var gameOver = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeElapsed = 0
@@ -39,6 +39,7 @@ struct TimeAttackView: View {
     }
     
     @State var settingsPresented: Bool = false
+    @Binding var backToTAOptionView: Bool
     
     private var totalTime: DispatchTimeInterval {
         switch difficulty {
@@ -54,64 +55,63 @@ struct TimeAttackView: View {
     var body: some View {
 
         let wordView = LetterBoxRowFunctional(word: currWord, sucessfulWords: $sucessfulWords, repeatedWords: $repeatedWords, wrongWords: $wrongWords)
-        ZStack {
+        NavigationStack {
+            ZStack {
+                
             
-            if gameOver {
-                GameOverView(score: score)
-            } else {
-                NavigationStack {
-                    ZStack{
-                        Color.indigo2.ignoresSafeArea()
-                        VStack{
-                            wordView
-                                .padding(.top, 0.2)
-                            NavigationLink(destination: GameOverView(score: score ).navigationBarBackButtonHidden(true)
-                                .ignoresSafeArea())
-                            {
-                                Text("Done!")
-                                    .font(.custom("Lovely Madness", size: 30))
-                            }.buttonStyle(GameOverButtonStyle())
+                    NavigationStack {
+                        ZStack{
+                            Color.indigo2.ignoresSafeArea()
+                            VStack{
+                                wordView
+                                    .padding(.top, 0.2)
+                                Button(action: {gameOver.toggle()} , label: {
+                                    Text("Done!")
+                                        .font(.custom("Lovely Madness", size: 30))
+                                })
+                                }.buttonStyle(GameOverButtonStyle())
+                                .fullScreenCover(isPresented: $gameOver, content: {
+                                    GameOverView(score: score, returnHome: $backToTAOptionView)
+                                })
                         }
                     }
+            }
+            .onChange(of: sucessfulWords.count) {
+                score += 100
+            }
+            .onChange(of: repeatedWords) {
+                score -= 25
+            }
+            .onChange(of: wrongWords) {
+                score -= 50
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarLeading) {
+                    Text("Score: \(score)")
+                        .font(.system(size: 25))
+                        .foregroundStyle(Color.platinum)
                 }
+                ToolbarItem(placement: .principal) {
+                    Text("\(timeLeft)")
+                        .font(.system(size: 25))
+                        .foregroundStyle(Color.platinum)
+                }
+                
+            }
+            .onReceive(self.timer, perform: { time in
+                timeElapsed += 1
+            })
+            .toolbar(.hidden, for: .tabBar)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + self.totalTime, execute: {gameOver = true})
             }
         }
-        .onChange(of: sucessfulWords.count) {
-            score += 100
-        }
-        .onChange(of: repeatedWords) {
-            score -= 25
-        }
-        .onChange(of: wrongWords) {
-            score -= 50
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .topBarLeading) {
-                Text("Score: \(score)")
-                    .font(.system(size: 25))
-                    .foregroundStyle(Color.platinum)
-            }
-            ToolbarItem(placement: .principal) {
-                Text("\(timeLeft)")
-                    .font(.system(size: 25))
-                    .foregroundStyle(Color.platinum)
-            }
-            
-        }
-        .onReceive(self.timer, perform: { time in
-            timeElapsed += 1
-        })
-        .toolbar(.hidden, for: .tabBar)
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + self.totalTime, execute: {gameOver = true})
-        }
+
     }
-    
-    init(currWord: String, difficulty: TAOptionView.Difficulty) {
-        self.currWord = currWord
-        self.difficulty = difficulty
-    }
+
 }
+    
+
 
 
 
@@ -120,9 +120,10 @@ struct TAPreviewContainer: View {
     @State var sucessfulWords: [String] = []
     @State var repeatedWords: Int = 0
     @State var wrongWords: Int = 0
+    @State var backToTAOptionView = false
     
     var body: some View {
-        TimeAttackView(currWord: "Cake", difficulty: .hard)
+        TimeAttackView(currWord: "Cake", difficulty: .hard, backToTAOptionView: $backToTAOptionView)
     }
     
     

@@ -21,6 +21,9 @@ struct MyButtonStyle: ButtonStyle {
 
 struct GameChoiceView: View {
     
+    @State private var showTAOptionView = false
+    @State private var showEOptionView = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -37,21 +40,24 @@ struct GameChoiceView: View {
                             .navigationBarBackButtonHidden(true)
                     }*/
                     //.buttonStyle(MyButtonStyle())
-                    NavigationLink("Time Attack Mode") {
-                        TAOptionView()
-                            .navigationBarBackButtonHidden(true)
-                    }
-                    .buttonStyle(MyButtonStyle())
+                    Button(action: {showTAOptionView.toggle()}, label: {
+                        Text("Time Attack Mode")
+                    }).buttonStyle(MyButtonStyle())
+                        .fullScreenCover(isPresented: $showTAOptionView, content: {
+                            TAOptionView(showTAOptionView: $showTAOptionView)
+                        })
                     /*NavigationLink("Challenge Mode") {
                         ChallengeLevelView()
                             .navigationBarBackButtonHidden(true)
                     }
                     .buttonStyle(MyButtonStyle())*/
-                    NavigationLink("Endless Mode") {
-                        EOptionView()
-                            .navigationBarBackButtonHidden(true)
-                    }
+                    Button(action: {showEOptionView.toggle()}, label: {
+                        Text("Endless Mode")
+                    })
                     .buttonStyle(MyButtonStyle())
+                    .fullScreenCover(isPresented: $showEOptionView, content: {
+                        EOptionView(showEOptionView: $showEOptionView)
+                    })
                     /*NavigationLink("Multiplayer Mode") {
                         MultiplayerView()
                             .navigationBarBackButtonHidden(true)

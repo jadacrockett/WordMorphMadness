@@ -22,19 +22,10 @@ struct GameOverButtonStyle: ButtonStyle {
 struct GameOverView: View {
     
     var score: Int
-    @State var returnHome = false
-    
-    init(score: Int) {
-        self.score = score
-            UITableView.appearance().backgroundColor = .green // Uses UIColor
-        }
-    
+    @Binding var returnHome: Bool
     
     var body: some View {
         ZStack {
-            if returnHome {
-                MainTabView()
-            } else {
                 NavigationStack {
                     ZStack {
                         Color.indigo2.ignoresSafeArea()
@@ -49,22 +40,25 @@ struct GameOverView: View {
                                 .foregroundStyle(Color.platinum)
                             Spacer()
                                 .frame(height: 150)
-                            NavigationLink(destination: GameChoiceView().navigationBarBackButtonHidden(true)
-                                .ignoresSafeArea())
-                            {
+                            Button(action: {
+                                returnHome.toggle()
+                            }, label: {
                                 Text("Done!")
                                     .font(.custom("Lovely Madness", size: 30))
-                            }.buttonStyle(GameOverButtonStyle())
+                            }).buttonStyle(GameOverButtonStyle())
                             
                         }
                     }
                 }.toolbar(.hidden, for: .navigationBar)
-            }
         }.toolbar(.hidden, for: .navigationBar)
         
     }
 }
 
 #Preview {
-    GameOverView(score: 321)
+    @State var returnHome = false
+    @State var returnHome2 = false
+    
+    return GameOverView(score: 321, returnHome: $returnHome)
+
 }
