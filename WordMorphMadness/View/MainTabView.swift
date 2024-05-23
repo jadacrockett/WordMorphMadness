@@ -41,8 +41,8 @@ struct MainTabView: View {
                     Text(String(coins))
                         .font(.system(size: 25))
                 }
-            }.foregroundColor(.rubyRed)
-        }.foregroundColor(.black)
+            }.foregroundColor(.black)
+        }
     }
 }
 

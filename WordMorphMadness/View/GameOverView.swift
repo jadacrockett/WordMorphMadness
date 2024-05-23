@@ -22,6 +22,7 @@ struct GameOverButtonStyle: ButtonStyle {
 struct GameOverView: View {
     
     var score: Int
+    var highScore: Int
     @Binding var returnHome: Bool
     
     var body: some View {
@@ -32,6 +33,11 @@ struct GameOverView: View {
                         VStack {
                             Text("Game Over!")
                                 .font(.custom("Lovely Madness", size: 40))
+                                .foregroundStyle(Color.platinum)
+                            Spacer()
+                                .frame(height: 30)
+                            Text("High Score: \(highScore)")
+                                .font(.custom("Lovely Madness", size: 30))
                                 .foregroundStyle(Color.platinum)
                             Spacer()
                                 .frame(height: 30)
@@ -59,6 +65,6 @@ struct GameOverView: View {
     @State var returnHome = false
     @State var returnHome2 = false
     
-    return GameOverView(score: 321, returnHome: $returnHome)
+    return GameOverView(score: 321, highScore: 450,returnHome: $returnHome)
 
 }

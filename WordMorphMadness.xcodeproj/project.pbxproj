@@ -89,6 +89,9 @@
 		DB727AB72BE1FA30000F3C04 /* ChallengeGameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB62BE1FA30000F3C04 /* ChallengeGameOver.swift */; };
 		DB727AB92BE2E647000F3C04 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB727AB82BE2E647000F3C04 /* ScrumStore.swift */; };
 		DB9D2D442BE086B90041A4F3 /* EOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D2D432BE086B90041A4F3 /* EOptionView.swift */; };
+		DBE47D3E2BFBE00A00F461BD /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE47D3D2BFBE00A00F461BD /* ResultsModel.swift */; };
+		DBE47D3F2BFBE00A00F461BD /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE47D3D2BFBE00A00F461BD /* ResultsModel.swift */; };
+		DBE47D402BFBE00A00F461BD /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE47D3D2BFBE00A00F461BD /* ResultsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,7 @@
 		DB727AB62BE1FA30000F3C04 /* ChallengeGameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGameOver.swift; sourceTree = "<group>"; };
 		DB727AB82BE2E647000F3C04 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		DB9D2D432BE086B90041A4F3 /* EOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOptionView.swift; sourceTree = "<group>"; };
+		DBE47D3D2BFBE00A00F461BD /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 				DB22EB1E2BDEBB83004C5A37 /* Word Files */,
 				DB71A5282BD97C2900AFCF9B /* getNewWord.swift */,
 				DB727AB82BE2E647000F3C04 /* ScrumStore.swift */,
+				DBE47D3D2BFBE00A00F461BD /* ResultsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +519,7 @@
 				DB08980F2BE0323A006C17C5 /* TestView.swift in Sources */,
 				DB71A5072BD853BF00AFCF9B /* StoreView.swift in Sources */,
 				DB71A4B62BD84CE600AFCF9B /* SplashView.swift in Sources */,
+				DBE47D3E2BFBE00A00F461BD /* ResultsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +531,7 @@
 				DB22EB602BE020E5004C5A37 /* TimeAttackView.swift in Sources */,
 				DB71A4FB2BD852AE00AFCF9B /* EndlessView.swift in Sources */,
 				DB71A4DD2BD84FCD00AFCF9B /* SplashView.swift in Sources */,
+				DBE47D3F2BFBE00A00F461BD /* ResultsModel.swift in Sources */,
 				DB71A4EF2BD8528800AFCF9B /* ClassicView.swift in Sources */,
 				DB727AAE2BE1EECD000F3C04 /* GameChoiceView.swift in Sources */,
 				DB727AB42BE1F51F000F3C04 /* ChallengeLevelView.swift in Sources */,
@@ -559,6 +566,7 @@
 				DB71A4F82BD852A400AFCF9B /* ChallengeView.swift in Sources */,
 				DB71A50D2BD853DD00AFCF9B /* ResultsView.swift in Sources */,
 				DB22EB642BE020F9004C5A37 /* GameOverView.swift in Sources */,
+				DBE47D402BFBE00A00F461BD /* ResultsModel.swift in Sources */,
 				DB71A5272BD94E6000AFCF9B /* LetterBoxRow.swift in Sources */,
 				DB727AB52BE1F51F000F3C04 /* ChallengeLevelView.swift in Sources */,
 				DB71A5002BD852BA00AFCF9B /* MultiplayerView.swift in Sources */,

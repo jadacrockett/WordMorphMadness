@@ -90,6 +90,7 @@ struct LetterBoxRowFunctional: View {
 
                 
             }.onAppear(perform: {keyboardFocused = true})
+
         }
     }
     
@@ -137,7 +138,13 @@ func getWord(array: [LetterBox]) -> String {
 }
 
 
-
+#Preview {
+    @State var sw: [String] = []
+    @State var rw: Int = 0
+    @State var ww: Int = 0
+    
+    return LetterBoxRowFunctional(word: "Cake", sucessfulWords: $sw, repeatedWords: $rw, wrongWords: $ww)
+}
 
 
 

@@ -52,6 +52,31 @@ struct TimeAttackView: View {
         }
     }
     
+    private var key: String {
+        var returnString = "TA"
+        switch difficulty {
+        case .easy:
+            returnString = returnString + "E"
+        case .medium:
+            returnString = returnString + "M"
+        case .hard:
+            returnString = returnString + "H"
+        }
+        switch currWord.count {
+        case 3:
+            returnString = returnString + "3"
+        case 4:
+            returnString = returnString + "4"
+        case 5:
+            returnString = returnString + "5"
+        case 6:
+            returnString = returnString + "6"
+        default:
+            returnString = returnString + "D"
+        }
+        return returnString
+    }
+    
     var body: some View {
 
         let wordView = LetterBoxRowFunctional(word: currWord, sucessfulWords: $sucessfulWords, repeatedWords: $repeatedWords, wrongWords: $wrongWords)
@@ -71,7 +96,7 @@ struct TimeAttackView: View {
                                 })
                                 }.buttonStyle(GameOverButtonStyle())
                                 .fullScreenCover(isPresented: $gameOver, content: {
-                                    GameOverView(score: score, returnHome: $backToTAOptionView)
+                                    GameOverView(score: score, highScore: getHighScore(score: score, key: key), returnHome: $backToTAOptionView)
                                 })
                         }
                     }

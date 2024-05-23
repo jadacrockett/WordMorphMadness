@@ -23,6 +23,23 @@ struct EndlessView: View {
     @State var settingsPresented: Bool = false
     @Binding var backToEOptionView: Bool
     
+    private var key: String {
+        var returnString = "End"
+        switch currWord.count {
+        case 3:
+            returnString = returnString + "3"
+        case 4:
+            returnString = returnString + "4"
+        case 5:
+            returnString = returnString + "5"
+        case 6:
+            returnString = returnString + "6"
+        default:
+            returnString = returnString + "D"
+        }
+        return returnString
+    }
+    
     
     var body: some View {
 
@@ -40,7 +57,7 @@ struct EndlessView: View {
                                     .font(.custom("Lovely Madness", size: 30))
                             }).buttonStyle(GameOverButtonStyle())
                                 .fullScreenCover(isPresented: $gameOver, content: {
-                                    GameOverView(score: score, returnHome: $backToEOptionView)
+                                    GameOverView(score: score, highScore: getHighScore(score: score, key: key), returnHome: $backToEOptionView)
                                 })
                         }
                     }.onChange(of: sucessfulWords.count) {
